@@ -126,7 +126,7 @@ section {
     bottom: 0;
     width: auto;
     height: .2rem;
-    background: radial-gradient(ellipse at left, #b2cdd7 0, rgba(200, 208, 241, 0) 70%);
+    background: radial-gradient(ellipse at left, #83b3da 0, rgba(200, 208, 241, 0) 70%);
 }
 
 .p-3 {
