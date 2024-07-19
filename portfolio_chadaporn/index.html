@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <canvas id="falling-snow-canvas"></canvas>
+    <audio id="background-music" src="mu/keshi - Say (Official Music Video).mp3" type="audio/mp3" autoplay></audio>
+    <div class="cubes-container">
+        <div class="cube cube-1"></div>
+        <div class="cube cube-2"></div>
+        <div class="cube cube-3"></div>
+        <div class="cube cube-4"></div>
+        <div class="cube cube-5"></div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="top-menu">
+                <ul>
+                    <li class="active" data-menu="about">
+                        <a href="#about">
+                            <i class="fas fa-user"></i>
+                            <span class="link">about</span>
+                        </a>
+                    </li>
+                    <li data-menu="resume">
+                        <a href="#resume">
+                            <i class="fas fa-file"></i>
+                            <span class="link">resume</span>
+                        </a>
+                    </li>
+                    <li data-menu="work">
+                        <a href="#work">
+                            <i class="fas fa-paint-brush"></i>
+                            <span class="link">work</span>
+                        </a>
+                    </li>
+                    <li data-menu="blog">
+                        <a href="#blog">
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="link">blog</span>
+                        </a>
+                    </li>
+                    <li data-menu="contact">
+                        <a href="#contact">
+                            <i class="fas fa-at"></i>
+                            <span class="link">contact</span>
+                        </a>
+                    </li>
+                    <li data-menu="home">
+                        <a href="/Users/kratae/Documents/GitGroup/projectGroup/homepage.html">
+                            <i class="fas fa-home"></i>
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="hero" id="hero">
+            <div class="hero-img">
+                <img src="img/234.JPG" style="height: 293px; width: 440px;" alt="Description of image">
+            </div>
+            <div class="hero-info">
+                <h2 class="title">Chadaporn Somon</h2>
+                <div class="hero-details">
+                    <h3 class="subtitle" id="subtitle"></h3>
+                    <p class="blink">|</p>
+                </div>
+            </div>
+            <div class="social">
+                <div id="message">Kratae</div>
+            </div>
+            <div class="links">
+                <a href="#">download cv</a>
+                <a href="#contact" data-menu="contact" id="contact-me">contact me</a>
+            </div>
+        </div>
+        <section class="about active" id="about">
+            <div class="about-me p-3">
+                <h3 class="specialtitle">about <span>me</span></h3>
+                <div class="row">
+                    <div class="text">
+                        <p>
+                           Hi I am Chadaporn Somon and you call call me Kratae, now I am DII student at  ChiangMai university
+                           in the faulty CAMT.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><strong>age . . . . .</strong> 21</li>
+                            <li><strong>residence . . . . .</strong> Thailand</li>
+                            <li><strong>freelance . . . . .</strong> available</li>
+                            <li><strong>address . .  .</strong>ChiangMai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="services p-3">
+                <h3 class="specialtitle">my <span>services</span></h3>
+                <div class="services-container">
+                    <div class="serv">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>web development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, quam.</p>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>web design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, quam.</p>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>game development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, quam.</p>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <i class="fas fa-share-alt-square"></i>
+                        </div>
+                        <h4>social media</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, quam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resume" id="resume">
+            <div class="my-resume p-3">
+                <h3 class="specialtitle">R<span>esume</span></h3>
+                <div class="row">
+                    <div class="experience">
+                        <div class="title">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>experience</h4>
+                        </div>
+                        <div class="exp-box">
+                            <span>2022 - present</span>
+                            <h4>front-end developer</h4>
+                            <h5>facebook inc.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, expedita.</p>
+                        </div>
+                        <div class="exp-box">
+                            <span>2017 - 2021</span>
+                            <h4>front-end developer</h4>
+                            <h5>Google inc.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, expedita.</p>
+                        </div>
+                        <div class="exp-box">
+                            <span>2014 - 2016</span>
+                            <h4>senior developer</h4>
+                            <h5>abc inc.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, expedita.</p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <div class="title">
+                            <i class="fas fa-university"></i>
+                            <h4>education</h4>
+                        </div>
+                        <div class="edu-box">
+                            <span>2023-now</span>
+                            <h4>DII</h4>
+                            <h5>CAMT</h5>
+                            <p>study about basic program</p>
+                        </div>
+                        <div class="edu-box">
+                            <span>2019-2021</span>
+                            <h4>Pre Engineering</h4>
+                            <h5>CISAT</h5>
+                            <p>study about skill basic engineer</p>
+                        </div>
+                        <div class="edu-box">
+                            <span>2012-2019</span>
+                            <h4>Student</h4>
+                            <h5>high school</h5>
+                            <p>hi I am normal student in high school</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills p-3">
+                <h3 class="specialtitle">My<span>skills</span></h3>
+                <div class="row">
+                    <div class="skill-left">
+                        <div class="skill">
+                            <div class="title">
+                                <i class="fas fa-paint-brush"></i>
+                                <h4>design</h4>
+                            </div>
+                            <div class="skill-box">
+                                <h4>web design</h4>
+                                <div class="progress">
+                                    <span data-progress="80%"></span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <h4>web developer</h4>
+                                <div class="progress">
+                                    <span data-progress="95%"></span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <h4>photoshop</h4>
+                                <div class="progress">
+                                    <span data-progress="70%"></span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <h4>graphic design</h4>
+                                <div class="progress">
+                                    <span data-progress="60%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coding">
+                            <div class="title">
+                                <i class="fas fa-code"></i>
+                                <h4>coding</h4>
+                            </div>
+                            <div class="coding-container">
+                                <div class="code">
+                                    <div class="progress">
+                                        <span class="progress-bar"></span>
+                                        <span class="num" data-num="90"></span>
+                                    </div>
+                                    <h5>HTML / CSS</h5>
+                                </div>
+                                <div class="code">
+                                    <div class="progress">
+                                        <span class="progress-bar"></span>
+                                        <span class="num" data-num="85"></span>
+                                    </div>
+                                    <h5>JavaScript</h5>
+                                </div>
+                                <div class="code">
+                                    <div class="progress">
+                                        <span class="progress-bar"></span>
+                                        <span class="num" data-num="75"></span>
+                                    </div>
+                                    <h5>PHP / MySQl</h5>
+                                </div>
+                                <div class="code">
+                                    <div class="progress">
+                                        <span class="progress-bar"></span>
+                                        <span class="num" data-num="80"></span>
+                                    </div>
+                                    <h5>BootStrap</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-right">
+                        <div class="languages">
+                            <div class="title">
+                                <i class="fas fa-flag"></i>
+                                <h4>languages</h4>
+                            </div>
+                            <div class="language">
+                                <h4>Thailand</h4>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="language">
+                                <h4>English</h4>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="language">
+                                <h4>Japanese</h4>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="language">
+                                <h4>Sims</h4>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="knowledges">
+                            <div class="title">
+                                <i class="fas fa-list"></i>
+                                <h4>knowledge</h4>
+                            </div>
+                            <div class="knowledge-container">
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Website hosting</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Git and github</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Create logo design</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Sass & Less</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Modern and mobile-ready</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Advertising services</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Graphics and animations</h4>
+                                </div>
+                                <div class="knowledge-box">
+                                    <i class="fas fa-check"></i>
+                                    <h4>Search engine marketing</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <div class="my-work p-3">
+                <h3 class="specialtitle">Recent<span>work</span></h3>
+                <div class="work-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/14.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4>Website Ecom</h4>
+                            <p><span>Web Design and php</span> / 18 Sep. 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/12.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4>Web KanKsam</h4>
+                            <p><span>Web Design and program</span> / 25 May. 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/13.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4>Web Wedding</h4>
+                            <p><span>Web Design</span> / 18 Sep. 2018</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/ee4.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4>Oop Programing</h4>
+                            <p><span>Java program</span> / 18 Sep. 2018</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/work-5.jpg" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4>lorem impsum dolor</h4>
+                            <p><span>Web Design</span> / 18 Sep. 2018</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/work-6.jpg" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4>lorem impsum dolor</h4>
+                            <p><span>Web Design</span> / 18 Sep. 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <div class="my-blog p-3">
+                <h3 class="specialtitle">b<span>log</span></h3>
+                <div class="blog-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/567.JPG" alt="">
+                        </div>
+                        <div class="box-desc">
+                            <span>Nov 23, 2023</span>
+                            <a href="#">Meeting with fanclub</a>
+                            <p>Famous celebrities take photos to promote the event</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/467.JPG" alt="">
+                        </div>
+                        <div class="box-desc">
+                            <span>Dec 25, 2023</span>
+                            <a href="#">Receive the winning prize</a>
+                            <p>Participate in contests and win prizes.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/489.JPG" alt="">
+                        </div>
+                        <div class="box-desc">
+                            <span>april 28, 2020</span>
+                            <a href="#">By spite about do of allow</a>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, voluptatem!</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/785.JPG" alt="">
+                        </div>
+                        <div class="box-desc">
+                            <span>april 28, 2020</span>
+                            <a href="#">By spite about do of allow</a>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, voluptatem!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-me p-3">
+                <h3 class="specialtitle">get<span>in touch</span></h3>
+                <div class="contact-container">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.948379689585!2d98.94782827547498!3d18.800453682348326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a6bf542deb3%3A0x85fbac3033920444!2sCollege%20of%20Arts%2C%20Media%20and%20Technology%2C%20Chiang%20Mai%20University!5e0!3m2!1sen!2sth!4v1721204233609!5m2!1sen!2sth"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info-list">
+                        <ul>
+                            <li><strong>address . . . . .</strong> California USA</li>
+                            <li><strong>email . . . . .</strong>chadapornsomon0611@gmail.com</li>
+                            <li><strong>phone . . . . .</strong>+123 654 78900</li>
+                            <li><strong>Instagram . . . . .</strong><a href="https://www.instagram.com/skittytae0o/">skittytae0o</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-title">
+                    <h3 class="specialtitle">contact<span>form</span></h3>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group message">
+                            <textarea placeholder="Your Message"></textarea>
+                        </div>
+                    </form>
+                    <button>send message <span></span></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
